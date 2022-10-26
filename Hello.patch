@@ -1,0 +1,49 @@
+Index: src/main/java/com/driver/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/driver/Main.java b/src/main/java/com/driver/Main.java
+--- a/src/main/java/com/driver/Main.java	(revision 4b5dc1a624844d15ae92ea28977fb795dec20a18)
++++ b/src/main/java/com/driver/Main.java	(date 1665211721648)
+@@ -1,5 +1,23 @@
+ package com.driver;
+ 
+ public class Main {
++    public static void main(String[] args){
++        Product p = new Product();
++        int ans = p.product(2,3);
++        int ans1 = p.product(2,3,4);
++        double ans2 = p.product(2.5,5.2);
++        System.out.println(ans + ans1 + ans2);
++    }
+ 
++    public static class Product{
++        public int product(int x, int y){
++            return x*y;
++        }
++        public int product(int x, int y, int z){
++            return x*y*z;
++        }
++        public double product(double x, double y){
++            return x*y;
++        }
++    }
+ }
+\ No newline at end of file
+diff --git a/target/classes/com/driver/Main.class b/target/classes/com/driver/Main.class
+index 5c22db4c3095b965e3e3c1fcc37a73a9582cbde3..3b4a01332b8972c5a1fc94ed747c11e9ab8c71f8
+GIT binary patch
+literal 841
+zc${rg?M@R>5IvXOcH3p8U<(BV5vkfzWi5UnRtX7>Ns|RhYML1TxNJ9dNxMsSw<JD+
+zkKl9YkCJHO0~mcJ<GI@!wc-A_XJ*dKnVH=C{nwXo0CrH<F$G0~Y9NKQ!0f4gZks*Z
+z@0u@9PF*J!NI&y@FWwVS%9XZ;j6l%|`erBe&fU;Fv^~Fc90r|%6YJ2R$ZOhwfhz*q
+z*@zHGm7C2<Q*t@U%~F;ThSK{gl9S#q{E+9TOj?jhMOoHpR2o?<VOhg911nhlZ^qX9
+zD0cfCEf}!Lyp=FsU>=8_AGhMrwfo#~4L3Bb8@P!Lf&3*o$)xmpzJOY8$Te>X<R;c6
+zcMx=35|-z?M}z)}8@{qndW>AP0>|#P?a-6{IH<<&yhvcqn$W3}>L+>&<u}$p%fy_a
+zTd%aq+hLcb`AcX4aVD@dDf;IP$SbzbTG5m;epDO5HX{uIy%h{X$9>_+0kg7jOLh>L
+zK60b@(3Lx}*l7B`8y@uRD01m)V{xpb#Q!4C6omXSyl>MpiGrBgyny(W(0AmUCP4*d
+z-o_{a6>Ji-sN(Lp_+ugj)V@M{eSxf1O{Is>pA)npX7;KD%oUIyVt!ZsjK!7Jw;vW&
+zXNc>68!aaSDP)K_{+}YP4K}$CJ!$@s92?*swul)HVUpuZ@=w&TO_d@w9?())H^cl#
+YP-#C-I_%&HQDwe{U0Ql#mGBhV-$-nu-2eap
+
